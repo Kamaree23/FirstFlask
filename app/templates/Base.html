@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+<ol>
+        {% for name in Fav_artists %}
+                {% if name == 'Junior H' %}
+                        <li><strong> The top artist in my top 5 is {{name}} and the rest are:</strong></li>
+                {% else %}
+                        <li> {{name}} </li> 
+                
+                {% endif %}
+            
+        {% endfor %}
+</ol>
